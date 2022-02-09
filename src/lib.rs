@@ -1,3 +1,5 @@
+/// Returns true if `n` is prime.
+/// Returns false if `n` is not prime.
 pub fn check_prime(num: u64) -> bool {
     if num < 2 {
         return false;
