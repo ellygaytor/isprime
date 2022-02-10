@@ -20,21 +20,21 @@ mod tests {
 
     #[test]
     fn test_9() {
-        assert_eq!(check_prime(9), false);
+        assert!(!(check_prime(9)));
     }
 
     #[test]
     fn test_3() {
-        assert_eq!(check_prime(3), true);
+        assert!(check_prime(3));
     }
 
     #[test]
     fn test_9293() {
-        assert_eq!(check_prime(9293), true);
+        assert!(check_prime(9293));
     }
 
     #[test]
     fn test_18446744073709551615() {
-        assert_eq!(check_prime(18446744073709551615), false);
+        assert!(!(check_prime(18446744073709551615)));
     }
 }
